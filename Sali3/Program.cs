@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Sali3
 {
@@ -16,6 +17,26 @@ namespace Sali3
 
             Jasen jasen1 = new Jasen("Kekke", "Kovalainen", "Kotikatu 4", "21290", "Rusko", "2332", "Mies");
             jasen1.naytaJasen();
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            Henkilosto.Trainer trainer = new Henkilosto.Trainer("Kaisa", "Kovalainen", "Jokikatu 10", "21290", "Rusko", "Lihaskunto", "0452454977", "kaisa.kovis@gmail.com");
+            trainer.naytaTrainer();
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            //testataan punnitus-olion toiminta
+
+            Punnitus punnitus = new Punnitus("10.9.2020", 71.5f, 1.71f);
+            punnitus.naytaPunnitus();
+
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            Console.WriteLine(punnitus.Painoindeksi());
 
         }
     }
