@@ -6,7 +6,10 @@ namespace Sali3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Henkilo henkilo1 = new Henkilo();
+            Console.WriteLine("testataan henkilo-olion luontia");
+            Console.WriteLine(henkilo1);
+
         }
     }
 }
