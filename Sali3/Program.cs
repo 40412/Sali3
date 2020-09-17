@@ -38,6 +38,18 @@ namespace Sali3
 
             Console.WriteLine(punnitus.Painoindeksi());
 
+            Rasva rasvaprosentti = new Rasva();
+            rasvaprosentti.ika = "26";
+            rasvaprosentti.sukupuoli = "Nainen";
+            Console.WriteLine(rasvaprosentti.Rasvaprosentti(1.63f, 50));
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            //testataan staattista rasvaprosentin laskumetodia
+
+            Console.WriteLine("Rasvaprosentti: " + Rasva.LaskeRasva2(71.5f, 1.71f, 58f, "Mies"));
+
         }
     }
 }
