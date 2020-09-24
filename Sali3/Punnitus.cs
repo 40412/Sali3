@@ -24,30 +24,5 @@ namespace Sali3
             Console.WriteLine("Pituus: " + this.pituus);
         }
 
-        public float Painoindeksi()
-        {
-            return paino / (pituus * pituus);
-        }
-
-        //public float RasvaprosenttiTytto()
-        //{
-        //    return 
-        //}
-
-        //public float RasvaprosenttiPoika()
-        //{
-        //    return 
-        //}
-
-        //public float RasvaprosenttiMies()
-        //{
-        //    return
-        //}
-
-        //public float RasvaprosenttiNainen()
-        //{
-        //    return 
-        //}
-
     }
 }

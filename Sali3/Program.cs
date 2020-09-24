@@ -15,8 +15,7 @@ namespace Sali3
             henkilo1.naytaHenkilo();
             henkilo2.naytaHenkilo();
 
-            Jasen jasen1 = new Jasen("Kekke", "Kovalainen", "Kotikatu 4", "21290", "Rusko", "2332", "Mies");
-            jasen1.naytaJasen();
+            
 
             Console.WriteLine("");
             Console.WriteLine("");
@@ -36,7 +35,7 @@ namespace Sali3
             Console.WriteLine("");
             Console.WriteLine("");
 
-            Console.WriteLine(punnitus.Painoindeksi());
+            
 
             Rasva rasvaprosentti = new Rasva();
             rasvaprosentti.ika = "26";
@@ -49,7 +48,11 @@ namespace Sali3
             //testataan staattista rasvaprosentin laskumetodia
 
             Console.WriteLine("Rasvaprosentti: " + Rasva.LaskeRasva2(71.5f, 1.71f, 58f, "Mies"));
+            Console.WriteLine("");
+            Console.WriteLine(""); Console.WriteLine("");
+            Console.WriteLine("");
 
+            Console.WriteLine(Rasva.Ika("1.11.1994"));
         }
     }
 }

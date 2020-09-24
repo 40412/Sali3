@@ -12,6 +12,7 @@ namespace Sali3
         protected string osoite;
         protected string postinumero;
         protected string postitoimipaikka;
+        
 
 
         // Olionmuodostimet (konstruktorit)
@@ -22,6 +23,7 @@ namespace Sali3
             this.osoite = "N/A";
             this.postinumero = "N/A";
             this.postitoimipaikka = "N/A";
+            
         }
 
         //kaikilla parametreillä
@@ -56,10 +58,11 @@ namespace Sali3
         // erityisominaisuudet, joita ei ole Henkilo-luokassa
         protected string jasenid;
         protected string sukupuoli;
+        protected int syntymaAika;
 
         // Muodostin kaikilla parametreilla
 
-        public Jasen(string etu, string suku, string katu, string pnro, string ptoimpkka, string jasenid, string sukupuoli)
+        public Jasen(string etu, string suku, string katu, string pnro, string ptoimpkka, string jasenid, string sukupuoli, int synaika)
         {
             this.etunimi = etu;
             this.sukunimi = suku;
@@ -68,6 +71,7 @@ namespace Sali3
             this.postitoimipaikka = ptoimpkka;
             this.jasenid = jasenid;
             this.sukupuoli = sukupuoli;
+            this.syntymaAika = 0;
         }
 
         public void naytaJasen()
@@ -79,6 +83,7 @@ namespace Sali3
             Console.WriteLine("Postitoimipaikka on " + this.postitoimipaikka);
             Console.WriteLine("Jäsennumero on " + this.jasenid);
             Console.WriteLine("Sukupuoli on " + this.sukupuoli);
+            Console.WriteLine("Syntymäaika on " + this.syntymaAika);
             
         }
 
