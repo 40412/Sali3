@@ -58,11 +58,13 @@ namespace Sali3
         // erityisominaisuudet, joita ei ole Henkilo-luokassa
         protected string jasenid;
         protected string sukupuoli;
-        protected int syntymaAika;
+        protected string syntymaAika;
+
+        
 
         // Muodostin kaikilla parametreilla
 
-        public Jasen(string etu, string suku, string katu, string pnro, string ptoimpkka, string jasenid, string sukupuoli, int synaika)
+        public Jasen(string etu, string suku, string katu, string pnro, string ptoimpkka, string jasenid, string sukupuoli, string synaika)
         {
             this.etunimi = etu;
             this.sukunimi = suku;
@@ -71,7 +73,17 @@ namespace Sali3
             this.postitoimipaikka = ptoimpkka;
             this.jasenid = jasenid;
             this.sukupuoli = sukupuoli;
-            this.syntymaAika = 0;
+            this.syntymaAika = synaika;
+        }
+
+        public string SyntymaAika
+        {
+            get { return this.syntymaAika; }
+        }
+
+        public string Sukupuoli
+        {
+            get { return this.sukupuoli; }
         }
 
         public void naytaJasen()

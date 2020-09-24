@@ -10,6 +10,15 @@ namespace Sali3
         protected float paino;
         protected float pituus;
 
+        public float Paino
+        {
+            get { return this.paino; }
+        }
+        public float Pituus
+        {
+            get { return this.pituus; }
+        }
+
         public Punnitus(string paiva, float paino, float pituus)
         {
             this.paiva = paiva;
